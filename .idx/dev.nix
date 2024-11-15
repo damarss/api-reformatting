@@ -20,8 +20,8 @@
       # Runs when a workspace is first created with this `dev.nix` file
       onCreate = {
         create-venv = ''
-          python -m venv .venv
-          source .venv/bin/activate
+          python -m venv venv
+          source venv/bin/activate
           pip install -r requirements.txt
         '';
       };
